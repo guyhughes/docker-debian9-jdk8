@@ -6,4 +6,5 @@ RUN apt-get update \
       openjdk-8-jre-headless \
       vim-nox tmux tree mosh ssh bash-completion rsync curl \
       sysfsutils info htop \
-    && rm -rf /var/cache/apt
+    && rm -rf /var/cache/apt \
+    && update-ca-certificates -f
